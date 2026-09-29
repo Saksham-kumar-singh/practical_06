@@ -1,0 +1,25 @@
+@model ProductCatalog.Models.Product
+
+@{
+    ViewBag.Title = "Product Details";
+}
+
+<h2>Product Details</h2>
+
+<div>
+    <h4>Product ID: @Model.ID</h4>
+
+    <h4>Product Name: @Model.ProductName</h4>
+
+    <h4>Price: ₹@Model.Price</h4>
+
+    <h4>Category: @Model.Category</h4>
+</div>
+
+<br />
+
+@Html.ActionLink(
+    "Back to Product List",
+    "Index",
+    "Product"
+)
